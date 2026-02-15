@@ -1,0 +1,15 @@
+include "/etc/bind/rfc1912.conf";
+zone "au-team.irpo" {
+    type master;
+    file "/etc/bind/db.au-team.irpo";
+};
+
+zone "10.168.192.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.192.168.10";
+};
+
+zone "20.168.192.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.192.168.20";
+};
